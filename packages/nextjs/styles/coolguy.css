@@ -1,0 +1,16 @@
+@keyframes spin-slow {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
+
+/* Example: custom card colors for dark/light */
+.coolguy-card {
+  background: rgba(255,255,255,0.9);
+  transition: background 0.3s;
+}
+[data-theme="dark"] .coolguy-card {
+  background: rgba(30,41,59,0.9);
+}
