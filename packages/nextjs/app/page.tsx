@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { MemberCard } from "../components/MemberCard";
 import type { NextPage } from "next";
 import { useScaffoldReadContract } from "~~/hooks/scaffold-eth";
 
@@ -112,55 +112,7 @@ const Home: NextPage = () => {
         <div className="grow bg-base-300 w-full mt-10 sm:mt-16 px-2 sm:px-8 py-8 sm:py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
             {members.map(member => (
-              <div
-                key={member.address}
-                className="bg-white dark:bg-gray-900 rounded-xl shadow-lg dark:shadow-indigo-900 p-5 sm:p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition-transform duration-300"
-              >
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-indigo-400 dark:border-indigo-300 shadow-lg mb-4">
-                  <Image
-                    src={member.avatar}
-                    alt={`${member.name}'s avatar`}
-                    width={96}
-                    height={96}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <div className="font-bold text-lg sm:text-xl mb-2 text-gray-900 dark:text-white">{member.name}</div>
-                <div className="mb-2 break-all text-xs text-gray-500 dark:text-gray-300">{member.address}</div>
-                <div className="mb-4 text-sm text-gray-700 dark:text-gray-200 text-center">{member.description}</div>
-                <div className="flex gap-3 sm:gap-4">
-                  {member.github && (
-                    <a
-                      href={`https://github.com/${member.github}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline text-blue-600 dark:text-blue-400"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                  {member.telegram && (
-                    <a
-                      href={`https://t.me/${member.telegram}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline text-blue-400 dark:text-blue-300"
-                    >
-                      Telegram
-                    </a>
-                  )}
-                  {member.linkedin && (
-                    <a
-                      href={`https://linkedin.com/in/${member.linkedin}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline text-blue-700 dark:text-blue-300"
-                    >
-                      LinkedIn
-                    </a>
-                  )}
-                </div>
-              </div>
+              <MemberCard key={member.address} member={member} />
             ))}
           </div>
         </div>
