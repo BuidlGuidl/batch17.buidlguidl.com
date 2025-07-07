@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Address } from "./scaffold-eth";
 
 export interface Member {
   address: string;
@@ -22,7 +23,7 @@ export const MemberCard = ({ member }: { member: Member }) => (
       />
     </div>
     <div className="font-bold text-lg sm:text-xl mb-2 text-gray-900 dark:text-white">{member.name}</div>
-    <div className="mb-2 break-all text-xs text-gray-500 dark:text-gray-300">{member.address}</div>
+    <Address address={member.address} />
     <div className="mb-4 text-sm text-gray-700 dark:text-gray-200 text-center">{member.description}</div>
     <div className="flex gap-3 sm:gap-4">
       {member.github && (
