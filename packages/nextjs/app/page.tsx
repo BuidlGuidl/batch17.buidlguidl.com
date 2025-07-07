@@ -65,7 +65,7 @@ const members = [
     telegram: "",
   },
   {
-    address: "0xE474023791245Ff654167397Ea8262B891Ba207c",
+    address: "0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA",
     name: "Adashima152",
     avatar: "/0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA_avatar.webp",
     description: `Hi, I'm Daniel, a full-stack developer with a foundation in JavaScript based stacks. I've been
