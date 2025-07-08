@@ -31,13 +31,12 @@ export const MemberCard = ({ member }: { member: Member }) => (
     </Link>
     <Address address={member.address} />
     <div className="mb-4 text-sm text-gray-700 dark:text-gray-200 text-center min-h-[60px]">{member.description}</div>
-    <div className="flex gap-3 sm:gap-4 mt-auto" onClick={e => e.stopPropagation()}>
+    <div className="flex gap-3 sm:gap-4 mt-auto">
       {member.github && (
         <a
           href={`https://github.com/${member.github}`}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={e => e.stopPropagation()}
           className="hover:underline text-blue-600 dark:text-blue-400"
         >
           GitHub
@@ -48,7 +47,6 @@ export const MemberCard = ({ member }: { member: Member }) => (
           href={`https://t.me/${member.telegram}`}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={e => e.stopPropagation()}
           className="hover:underline text-blue-400 dark:text-blue-300"
         >
           Telegram
@@ -59,7 +57,6 @@ export const MemberCard = ({ member }: { member: Member }) => (
           href={`https://linkedin.com/in/${member.linkedin}`}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={e => e.stopPropagation()}
           className="hover:underline text-blue-700 dark:text-blue-300"
         >
           LinkedIn
