@@ -57,10 +57,7 @@ const members = [
     address: "0xE474023791245Ff654167397Ea8262B891Ba207c",
     name: "Neeraj27",
     avatar: "https://avatars.githubusercontent.com/u/87654321?v=4",
-    description: `Hi, I'm Daniel, a full-stack developer with a foundation in JavaScript based stacks. I've been
-          interested in web3 development for a while now and decided to start out my journey with BuidlGuidl's
-          SpeedRunEthereum. I enjoy the challenge of building complete applications from start to finish and I look
-          forward to leveraging my skills by contributing to interesting and innovative decentralized applications.`,
+    description: `Hi, I'm Neeraj. I'm passionate about self-sovereignty and zk-primitives.`,
     github: "",
     telegram: "",
   },
@@ -68,10 +65,7 @@ const members = [
     address: "0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA",
     name: "Adashima152",
     avatar: "/0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA_avatar.webp",
-    description: `Hi, I'm Daniel, a full-stack developer with a foundation in JavaScript based stacks. I've been
-          interested in web3 development for a while now and decided to start out my journey with BuidlGuidl's
-          SpeedRunEthereum. I enjoy the challenge of building complete applications from start to finish and I look
-          forward to leveraging my skills by contributing to interesting and innovative decentralized applications.`,
+    description: `Passionate about building on Ethereum and exploring decentralized technologies. Always learning.`,
     github: "adashima152",
     telegram: "",
   },
