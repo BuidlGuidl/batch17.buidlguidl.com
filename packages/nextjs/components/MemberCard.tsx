@@ -13,7 +13,7 @@ export interface Member {
 }
 
 export const MemberCard = ({ member }: { member: Member }) => (
-  <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg dark:shadow-indigo-900 p-5 sm:p-6 flex flex-col items-center text-left cursor-pointer transition hover:scale-[1.02] h-full min-h-[400px]">
+  <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg dark:shadow-indigo-900 p-5 sm:p-6 flex flex-col items-center text-left cursor-pointer transition h-full min-h-[400px]">
     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-indigo-400 dark:border-indigo-300 shadow-lg mb-4">
       <Image
         src={member.avatar}
